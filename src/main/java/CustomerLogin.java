@@ -68,7 +68,7 @@ public class CustomerLogin extends JFrame implements ActionListener {
         btnSignUp.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Customer.dispose();
-                //new Register().setVisible(true);
+                new Register().setVisible(true);
             }
         });
         btnSignUp.setBounds(260, 186, 117, 29);
