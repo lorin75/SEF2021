@@ -42,14 +42,14 @@ public class ShoppingCart{
 
         JLabel message1 = new JLabel("Here's your ordered food");
         message1.setForeground(Color.BLACK);
-        message1.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
+        message1.setFont(new Font("Lucida Grande", Font.PLAIN, 20));
         message1.setBounds(78, 35, 306, 29);
         Status.getContentPane().add(message1);
 
 
         JLabel message2 = new JLabel("No ordered food yet");
         message2.setForeground(Color.BLACK);
-        message2.setFont(new Font("Lucida Grande", Font.PLAIN, 10));
+        message2.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
         message2.setBounds(260, 139, 500, 29);
         Status.getContentPane().add(message2);
 

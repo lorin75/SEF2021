@@ -158,7 +158,7 @@ public class FoodMenu{
         Submit_button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Status.dispose();
-                //new ShoppingCart().setVisible(true);
+                new ShoppingCart().setVisible(true);
             }
         });
         Submit_button.setBounds(200, 420, 250, 29);
