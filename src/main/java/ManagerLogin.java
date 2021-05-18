@@ -35,7 +35,7 @@ public class ManagerLogin extends JFrame implements ActionListener {
         Manager.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Manager.getContentPane().setLayout(null);
 
-        JLabel lblWelcome = new JLabel("Welcome mister manager!");
+        JLabel lblWelcome = new JLabel("Welcome, mister manager!");
         lblWelcome.setForeground(Color.BLACK);
         lblWelcome.setBounds(108, 21, 229, 39);
         Manager.getContentPane().add(lblWelcome);
@@ -72,7 +72,7 @@ public class ManagerLogin extends JFrame implements ActionListener {
         String userName = txtTypeName.getText();
         String password = passwordFiled.getText();
         if (userName.trim().equals("admin") && password.trim().equals("admin")) {
-            //new OrdersList().setVisible(true);
+            new OrdersList().setVisible(true);
         } else {
 
         }

@@ -54,7 +54,7 @@ public class StartPage{
         JLabel lblNewLabel = new JLabel("Welcome!");
         lblNewLabel.setForeground(Color.BLUE);
         lblNewLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 17));
-        lblNewLabel.setBounds(78, 35, 306, 29);
+        lblNewLabel.setBounds(180, 35, 306, 29);
         Status.getContentPane().add(lblNewLabel);
 
         JButton btnRegister = new JButton("Customer");
@@ -71,7 +71,7 @@ public class StartPage{
         btnManager.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Status.dispose();
-                //new ManagerLogin().setVisible(true);
+                new ManagerLogin().setVisible(true);
             }
         });
         btnManager.setBounds(133, 141, 170, 29);
