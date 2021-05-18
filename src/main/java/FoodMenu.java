@@ -34,7 +34,7 @@ public class FoodMenu{
      */
     private void initialize() {
         Status = new JFrame();
-        Status.setBounds(100, 100, 650, 470);
+        Status.setBounds(100, 100, 650, 530);
         Status.setTitle("Food Menu.");
         Status.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Status.getContentPane().setLayout(null);
@@ -148,13 +148,25 @@ public class FoodMenu{
         price6.setBounds(260, 370, 500, 29);
         Status.getContentPane().add(price6);
 
+        JLabel submit_message = new JLabel("Go to shopping cart.");
+        submit_message.setForeground(Color.BLACK);
+        submit_message.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+        submit_message.setBounds(200, 450, 500, 29);
+        Status.getContentPane().add(submit_message);
 
+        JButton Submit_button = new JButton("SUBMIT.");
+        Submit_button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Status.dispose();
+                //new ShoppingCart().setVisible(true);
+            }
+        });
+        Submit_button.setBounds(200, 420, 250, 29);
+        Status.getContentPane().add(Submit_button);
 
-        JLabel lblLobby = new JLabel();
-        lblLobby.setIcon(new ImageIcon("/lobby.jpg"));
-        lblLobby.setBounds(0, 0, 450, 328);
-        Status.getContentPane().add(lblLobby);
 
 
     }
+
+
 }
