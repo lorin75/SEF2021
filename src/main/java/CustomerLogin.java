@@ -81,7 +81,7 @@ public class CustomerLogin extends JFrame implements ActionListener {
         String userName = txtTypeName.getText();
         String password = passwordFiled.getText();
         if (userName.trim().equals("admin") && password.trim().equals("admin")) {
-            //new FoodMenu().setVisible(true);
+            new FoodMenu().setVisible(true);
         } else {
 
         }
