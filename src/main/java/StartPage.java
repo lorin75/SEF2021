@@ -51,7 +51,7 @@ public class StartPage{
         Status.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Status.getContentPane().setLayout(null);
 
-        JLabel lblNewLabel = new JLabel("Welcome");
+        JLabel lblNewLabel = new JLabel("Welcome!");
         lblNewLabel.setForeground(Color.BLUE);
         lblNewLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 17));
         lblNewLabel.setBounds(78, 35, 306, 29);
@@ -76,13 +76,6 @@ public class StartPage{
         });
         btnManager.setBounds(133, 141, 170, 29);
         Status.getContentPane().add(btnManager);
-
-
-        JLabel lblLobby = new JLabel();
-        lblLobby.setIcon(new ImageIcon("/lobby.jpg"));
-        lblLobby.setBounds(0, 0, 450, 328);
-        Status.getContentPane().add(lblLobby);
-
 
     }
 }
