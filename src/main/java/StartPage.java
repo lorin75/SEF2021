@@ -61,7 +61,7 @@ public class StartPage{
         btnRegister.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Status.dispose();
-               // new CustomerLogin().setVisible(true);
+               new CustomerLogin().setVisible(true);
             }
         });
         btnRegister.setBounds(133, 88, 170, 29);
